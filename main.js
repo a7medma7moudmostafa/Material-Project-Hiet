@@ -10,7 +10,7 @@
                     { id: 6, name: "مقرر انساني و ثقافي 1", code: "ART101" }
                 ],
                 2: [ // الترم الثاني
-                    { id: 7, name: "Field ", code: "E123" },
+                    { id: 7, name: "Field 1", code: "E123" },
                     { id: 8, name: "قياسات كهربائية و الالكترونية", code: "E124" },
                     { id: 9, name: "Math 4", code: "MAHT102" },
                     { id: 10, name: "اختبارات كهربائية 1", code: "E125" },
@@ -356,5 +356,6 @@
     //         footer.style.bottom = "-60px"; // يختفي
     //     }
     // });
+
 
 
