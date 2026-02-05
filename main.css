@@ -466,6 +466,12 @@
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 0.85rem;
             z-index: 1000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
         }
 
         footer p {
@@ -511,5 +517,6 @@
             }
 
         }
+
 
 
