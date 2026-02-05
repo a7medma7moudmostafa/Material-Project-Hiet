@@ -1,311 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عن المكتبة - HIET</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            padding-bottom: 80px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            color: white;
-            padding: 40px 20px;
-            margin-bottom: 40px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .content-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            margin-bottom: 30px;
-        }
-
-        .content-card h2 {
-            color: #667eea;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
-        }
-
-        .content-card p {
-            color: #2d3748;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .content-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .content-card ul li {
-            color: #2d3748;
-            font-size: 1.05rem;
-            padding: 12px 0;
-            padding-right: 30px;
-            position: relative;
-            line-height: 1.6;
-        }
-
-        .content-card ul li:before {
-            content: "✓";
-            position: absolute;
-            right: 0;
-            color: #10b981;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .team-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 20px 0;
-        }
-
-        .team-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .team-members {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .team-member {
-            background: rgba(255,255,255,0.2);
-            padding: 20px 30px;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
-            .whatsapp-link {
-        display: inline-block;
-        margin-top: 5px;
-        text-decoration: none;
-        color: #25D366;
-        font-weight: bold;
-        font-size: 0.95rem;
-    }
-
-    .whatsapp-link:hover {
-        text-decoration: underline;
-    }
-
-
-        .back-btn {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        .back-btn:hover {
-            background: #764ba2;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        }
-
-        .btn-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border-right: 5px solid #667eea;
-            margin: 20px 0;
-        }
-
-        .highlight-box h3 {
-            color: #667eea;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-
-        .highlight-box p {
-            color: #2d3748;
-            margin: 0;
-        }
-
-        footer {
-            text-align: center;
-            color: white;
-            padding: 12px 20px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(102, 126, 234, 0.95);
-            backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            .content-card {
-                padding: 25px;
-            }
-
-            .content-card h2 {
-                font-size: 1.5rem;
-            }
-
-            .team-members {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>📚 عن مكتبة الهندسة الكهربائية</h1>
-            <p style="font-size: 1.1rem; opacity: 0.95;">HIET - Higher Institute of Engineering and Technology</p>
-        </header>
-
-        <div class="content-card">
-            <h2>🎯 ما هي مكتبة HIET؟</h2>
-            <p>
-                مكتبة الهندسة الكهربائية – HIET هي منصة تعليمية رقمية تم تطويرها خصيصاً 
-                لتجميع وتنظيم كافة المواد الدراسية الخاصة بقسم الهندسة الكهربائية 
-                بالمعهد العالي للهندسة والتكنولوجيا – سوهاج في مكان واحد سهل الوصول.
-            </p>
-            <p>
-                المنصة توفر للطلاب إمكانية الوصول السريع للمحاضرات، السكاشن، الكويزات، 
-                التلخيصات، والكتب الدراسية بطريقة منظمة ومرتبة حسب السنة الدراسية والترم.
-            </p>
-        </div>
-
-        <div class="content-card">
-            <h2>✨ مميزات المكتبة</h2>
-            <ul>
-                <li>تنظيم شامل للمحتوى حسب السنة الدراسية والترم</li>
-                <li>واجهة مستخدم عربية بسيطة وسهلة الاستخدام</li>
-                <li>إمكانية عرض الملفات مباشرة دون الحاجة للتحميل</li>
-                <li>تصنيف المحتوى إلى محاضرات، سكاشن، كويزات، تلخيصات، وكتب</li>
-                <li>خاصية البحث السريع عن المواد</li>
-                <li>تصميم متجاوب يعمل على جميع الأجهزة</li>
-                <li>سهولة التحميل المباشر للملفات</li>
-            </ul>
-        </div>
-
-        <div class="content-card">
-            <h2>🎓 الهدف من المنصة</h2>
-            <p>
-                نهدف إلى تسهيل رحلة التعلم لطلاب الهندسة الكهربائية من خلال توفير 
-                مكتبة رقمية شاملة ومنظمة تختصر وقت البحث عن المواد الدراسية وتساعد 
-                الطلاب على التركيز في الدراسة بدلاً من البحث عن المصادر.
-            </p>
-            
-            <div class="highlight-box">
-                <h3>💡 رؤيتنا المستقبلية</h3>
-                <p>
-                    نسعى لتطوير المنصة لتشمل جميع الأقسام والتخصصات في المعهد، 
-                    وإضافة مميزات جديدة مثل نظام رفع الملفات، حسابات المستخدمين، 
-                    والتحديث المستمر للمحتوى لخدمة أكبر عدد من الطلاب.
-                </p>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <div class="team-section">
-                <h3>👨‍💻 فريق التطوير</h3>
-                <p style="text-align: center; margin-bottom: 10px;">
-                    تم تطوير هذه المنصة بجهود طلابية من قسم الهندسة الكهربائية
-                </p>
-                <div class="team-members">
-                    <div class="team-member">
-        Ahmed Mahmoud Mostafa
-        <br>
-        <a href="https://wa.me/201093358794" target="_blank" class="whatsapp-link">
-            📱 WhatsApp
-        </a>
-    </div>
-
-    <div class="team-member">
-        Mahmoud El-Sagheer
-        <br>
-        <a href="https://wa.me/201019593092" target="_blank" class="whatsapp-link">
-            📱 WhatsApp
-        </a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2>📬 كلمة أخيرة</h2>
-            <p>
-                نتمنى أن تكون هذه المنصة عوناً لكل طالب في رحلته التعليمية. 
-                نحن دائماً نسعى للتطوير والتحسين، ونرحب بأي اقتراحات أو ملاحظات 
-                تساعدنا على تقديم خدمة أفضل.
-            </p>
-            <p style="text-align: center; font-weight: bold; color: #667eea; margin-top: 20px;">
-                📚 بالتوفيق لنا جميعا📚
-                
-            </p>
-            <p style="text-align: center; font-weight: bold; color: #667eea; margin-top: 20px;">
-                تم صنعها بكل حب و اخلاص ❤️
-            
-            </p>
-        </div>
-
-        <div class="btn-container">
-            <a href="index.html" class="back-btn">← العودة للصفحة الرئيسية</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>© 2026 مكتبة الهندسة الكهربائية - HIET</p>
-    </footer>
-</body>
-</html>
