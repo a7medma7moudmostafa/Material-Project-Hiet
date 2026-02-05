@@ -342,4 +342,17 @@
                 }
             });
         }, 100);
+
+    });
+
+
+        
+    window.addEventListener("scroll", () => {
+        const footer = document.querySelector("footer");
+
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 5) {
+            footer.style.bottom = "0";   // يظهر
+        } else {
+            footer.style.bottom = "-60px"; // يختفي
+        }
     });
