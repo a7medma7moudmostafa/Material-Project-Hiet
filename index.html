@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الهندسة الكهربائية - HIET</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 مكتبة الهندسة الكهربائية</h1>
+            <p style="font-size: 1.3rem; font-weight: bold; margin-bottom: 5px;">HIET</p>
+            <p>المعهد العالي للهندسة والتكنولوجيا - سوهاج</p>
+            
+            <!-- زر عن المكتبة -->
+            <a href="about.html" class="about-btn">ℹ️ عن المكتبة</a>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-box" id="searchInput" placeholder="🔍 ابحث عن مادة...">
+        </div>
+
+        <div class="no-results" id="noResults">
+            ⚠️ لم يتم العثور على نتائج
+        </div>
+
+        <div class="back-to-home">
+            <button id="backToHomeBtn">← العودة للصفحة الرئيسية</button>
+        </div>
+
+        <!-- اختيار السنة -->
+        <div class="years-buttons">
+            <button class="year-btn" data-year="1">السنة الأولى</button>
+            <button class="year-btn" data-year="2">السنة الثانية</button>
+            <button class="year-btn" data-year="3">السنة الثالثة</button>
+            <button class="year-btn" data-year="4">السنة الرابعة</button>
+        </div>
+
+        <!-- اختيار الترم -->
+        <div class="terms-selector">
+            <h3 id="selectedYearTitle">اختر الترم</h3>
+            <div class="terms-buttons">
+                <button class="term-btn" data-term="1">📘 الترم الأول</button>
+                <button class="term-btn" data-term="2">📗 الترم الثاني</button>
+            </div>
+            <button class="back-btn" id="backToYears">← رجوع للسنوات</button>
+        </div>
+
+        <!-- عرض المواد -->
+        <div class="subjects-view">
+            <h3 style="color: white; text-align: center; font-size: 1.5rem; margin-bottom: 20px;" id="subjectsTitle"></h3>
+            <div class="subjects-grid" id="subjectsGrid"></div>
+            <div style="text-align: center;">
+                <button class="back-btn" id="backToTerms">← رجوع للترمات</button>
+            </div>
+        </div>
+
+        <!-- عرض أنواع المحتوى -->
+        <div class="content-types-view">
+            <div style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                <h2 style="color: #667eea; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 3px solid #667eea;" id="contentTypesTitle"></h2>
+                <div id="contentTypesGrid">
+                    <div class="content-type-card" data-type="lectures">
+                        <h3><span class="icon">📚</span> محاضرات</h3>
+                    </div>
+                    <div class="content-type-card" data-type="sections">
+                        <h3><span class="icon">📝</span> سكاشن</h3>
+                    </div>
+                    <div class="content-type-card" data-type="quizzes">
+                        <h3><span class="icon">✅</span> كويزات</h3>
+                    </div>
+                    <div class="content-type-card" data-type="summaries">
+                        <h3><span class="icon">📄</span> تلخيصات</h3>
+                    </div>
+                    <div class="content-type-card" data-type="books">
+                        <h3><span class="icon">📖</span> كتب</h3>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <button class="back-btn" id="backToSubjects">← رجوع للمواد</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- عرض الملفات -->
+        <div class="files-view">
+            <div class="files-list">
+                <h2 id="filesTitle"></h2>
+                <div id="filesList">
+                    <!-- الملفات هتظهر هنا -->
+                    <div class="empty-state">
+                        <div style="font-size: 3rem;">📁</div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <button class="back-btn" id="backToContentTypes">← رجوع لأنواع المحتوى</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div class="pdf-viewer" id="pdfViewer">
+        <div class="pdf-header">
+            <div class="pdf-title" id="pdfTitle"></div>
+            <button class="close-pdf-btn" id="closePdfBtn">✕ إغلاق</button>
+        </div>
+        <div class="pdf-content">
+            <iframe id="pdfFrame"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 مكتبة الهندسة الكهربائية - HIET</p>
+        <span class="footer-names">Ahmed Mahmoud Mostafa & Mahmoud El-Sagheer</span>
+    </footer>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
