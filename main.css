@@ -481,6 +481,7 @@
 
         .footer-names {
             font-size: 0.85rem;
+            padding: 30px;
             font-weight: 500;
             margin-left: 15px;
         }
@@ -517,6 +518,7 @@
             }
 
         }
+
 
 
 
