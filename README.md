@@ -10,6 +10,6 @@ This project is a simple web platform designed to help students organize, browse
 ## Tech Stack
 - HTML
 - CSS
-- JavaScript (if فيه أي تفاعلات)
+- JavaScript 
 
 
